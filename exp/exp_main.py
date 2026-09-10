@@ -1,6 +1,7 @@
 from data_provider.data_factory import data_provider
 from exp.exp_basic import Exp_Basic
 import models.DMamba as DMamba
+import models.RaMamba as RaMamba
 import models.DMamba_Hybrid as DMamba_Hybrid
 import models.DMamba_T as DMamba_T
 import models.DMamba_AllMamba as DMamba_AllMamba
@@ -29,6 +30,7 @@ class Exp_Main(Exp_Basic):
 
     def _build_model(self):
         model_dict = {
+            'RaMamba': RaMamba,
             'DMamba': DMamba,
             'DMamba_hybrid': DMamba_Hybrid,
             'DMamba_T': DMamba_T,

@@ -14,14 +14,14 @@ random.seed(fix_seed)
 torch.manual_seed(fix_seed)
 np.random.seed(fix_seed)
 
-parser = argparse.ArgumentParser(description='DMamba')
+parser = argparse.ArgumentParser(description='RaMamba')
 
 # basic config
 parser.add_argument('--is_training', type=int, required=True, default=1, help='status')
 parser.add_argument('--train_only', type=bool, required=False, default=False, help='perform training on full input dataset without validation and testing')
 parser.add_argument('--model_id', type=str, required=True, default='test', help='model id')
-parser.add_argument('--model', type=str, required=True, default='DMamba',
-                    help='model name, options: [DMamba, DMamba_hybrid, DMamba_T, DMamba_AllMamba, DMamba_MixedMamba, DMamba_TrendMamba, DMamba_TMamba, DMamba_DualMamba, DMamba_MLP]')
+parser.add_argument('--model', type=str, required=True, default='RaMamba',
+                    help='model name, options: [RaMamba, DMamba (legacy alias), DMamba_hybrid, DMamba_T, DMamba_AllMamba, DMamba_MixedMamba, DMamba_TrendMamba, DMamba_TMamba, DMamba_DualMamba, DMamba_MLP]')
 
 # data loader
 parser.add_argument('--data', type=str, required=True, default='ETTh1', help='dataset type')
