@@ -75,6 +75,4 @@ bash scripts/ablation/run_ablation_DMamba_AllMamba.sh
 
 The model outputs results (MSE/MAE) to the `results/` directory and logs to `logs/`.
 
-## Citation
 
-The camera-ready citation will be added after the ICONIP 2026 proceedings metadata is finalized.
